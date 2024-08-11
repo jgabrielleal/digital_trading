@@ -1,5 +1,5 @@
 # Digital Trading 
-Projeto de landing page para o projeto "Digital Trading"
+Landing page para o projeto "Digital Trading"
 
 # Instalação 
 1. Clone o repositório 
