@@ -22,10 +22,6 @@ $breakpoints: (
 
 // Classes de colunas
 @for $i from 1 through 12 {
-    .col-xs-#{$i} {
-        @include make-col($i);
-    }
-
     @each $breakpoint in (sm, md, lg, xl, xxl) {
         @include respond-to($breakpoint) {
             .col-#{$breakpoint}-#{$i} {
