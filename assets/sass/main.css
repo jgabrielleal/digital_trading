@@ -23,7 +23,7 @@ body {
   margin: 0 auto !important;
 }
 .header .navbar .navbar-brand img {
-  width: 205px;
+  width: 210px;
   height: 61px;
   image-rendering: -webkit-optimize-contrast; /* Para navegadores baseados em WebKit */
   image-rendering: crisp-edges; /* Para outros navegadores */
