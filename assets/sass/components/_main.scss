@@ -1,0 +1,183 @@
+.bloco-vantagens{
+    width: 1000px;
+    position: relative;
+    display: none !important;
+    @include lg{
+        display: block !important;
+        margin-top: 100px;
+    }
+    .bloco01{
+        width: 400px;
+        height: 280px;
+        position: relative;
+        background-color: rgba(7, 22, 36, 1);
+        border-top-left-radius: 31.9px;
+        border-top-right-radius: 31.9px;
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: transparent;
+            bottom: 0px;
+            right: -100px;
+            height: 100px;
+            width: 100px;
+            border-top-right-radius: 25px;
+            box-shadow: 0 -25px 0 0 rgba(7, 22, 36, 1);
+            transform: scaleX(-1) rotate(90deg); /* Gira o elemento 90 graus e inverte horizontalmente */
+
+        }
+        h1{
+            width: 377px;
+            height: 117px;
+            font-family: "monument-extended";
+            font-size: 30px;
+            color: rgba(255, 255, 255, 1);
+            display: block;
+            padding-top: 50px !important;
+            margin-bottom: 90px;
+            margin-left: 37px;
+        }
+        a{
+            width: 332px;
+            height: 45px;
+            font-family: "monument-extended";
+            font-size: 16px;
+            color: rgba(255, 255, 255, 1);
+            text-decoration: none;
+            background: rgba(0, 117, 255, 1);
+            padding: 20px 70px 16px 70px;
+            border-radius: 32px;
+            margin-left: 32px;
+            box-shadow: 0px 22.07px 61.43px -19px rgba(57, 101, 255, 0.6);
+        }
+    }
+    .bloco02{
+        width: 495px;
+        height: 259px;
+        margin-left: 453px;
+        margin-top: -280px;
+    }
+    .bloco03{
+        width: 950px;
+        height: 500px;
+        margin-top: 21px;
+        background-color: rgba(7, 22, 36, 1);
+        border-top-right-radius: 31.9px;
+        border-bottom-left-radius: 31.9px;
+        border-bottom-right-radius: 31.9px;
+        display: flex;
+        gap: 100px;
+        padding: 40px;
+        .card{
+            width: 248px;
+            img{
+                width: 127.59px;
+                height: 44.87px;
+            }
+            h1{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-family: "monument-extended";
+                font-size: 20px;
+                color: rgba(255, 255, 255, 1);
+            }
+            p{
+                font-family: "inter";
+                font-size: 13px;
+                color: rgba(165, 195, 255, 1);
+            }
+        }
+    }
+    .link{
+        width: 604px;
+        height: 45px;
+        border-radius: 32px;
+        margin-top: -21px;
+        padding: 15px 70px 16px 70px;
+        background: rgba(0, 117, 255, 1);
+        box-shadow: 0px 22.07px 61.43px -19px rgba(57, 101, 255, 0.6);
+        font-family: "monument-extended";
+        font-size: 14px;
+        text-align: center;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+.bloco-plataforma{
+    width: 100%;
+    height: auto;
+    background-image: url('../images/Rectangle-259.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    img{
+        width: 100%;
+        display: block;
+        margin: 0 auto !important;
+        @include lg{
+            width: 500px;
+        }
+    }
+    a{
+        width: 100%;
+        border-radius: 32px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 15px 70px 16px 70px;
+        background: rgba(0, 117, 255, 1);
+        box-shadow: 0px 22.07px 61.43px -19px rgba(57, 101, 255, 0.6);
+        font-family: "monument-extended";
+        font-size: 14px;
+        text-align: center;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 1);
+        @include lg{
+            width: 682px;
+            height: 45px;
+        }
+    }
+}
+
+.bloco-duvidas{
+    margin-top: 50px;
+    h1{
+        text-align: center;
+        font-family: "monument-extended";   
+        font-size: 36px;
+        color: rgba(255, 255, 255, 1);
+    }
+}
+.bloco-details{
+    details {
+        border-radius: 120px;
+        background-color: rgba(7, 22, 36, 1) !important;
+        margin-bottom: 20px;
+        transition: border-radius 0.5s ease, background-color 0.5s ease;
+        summary {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px;
+          list-style: none;
+          font-family: "Inter", sans-serif;
+          font-size: 18px;
+          color: rgba(255, 255, 255, 1);
+          img {
+            width: 50px;
+          }
+        }
+        &[open] {
+          border-radius: 30px !important;
+        }
+        p{
+            font-family: "Inter", sans-serif;
+            font-size: 14px;
+            color: rgba(165, 195, 255, 1);
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+        }
+      }
+}

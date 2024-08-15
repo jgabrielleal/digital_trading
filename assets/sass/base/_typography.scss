@@ -1,13 +1,11 @@
 @font-face {
-    font-family: 'monument-exetended';
-    src: url('../fonts/MonumentExtended-Regular');
-    font-weight: normal;
+    font-family: 'monument-extended';
+    src: url('../fonts/monument-extended-medium.ttf') format('truetype');
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'monument-exetended';
-    src: url('../fonts/MonumentExtended-UltraBold');
-    font-weight: bold;
+    font-family: 'inter';
+    src: url('../fonts/Inter-Medium.otf') format('opentype');
     font-display: swap;
 }
