@@ -39,13 +39,12 @@
         }
         a{
             width: 332px;
-            height: 45px;
             font-family: "monument-extended";
             font-size: 16px;
             color: rgba(255, 255, 255, 1);
             text-decoration: none;
             background: rgba(0, 117, 255, 1);
-            padding: 20px 70px 16px 70px;
+            padding: 20px 70px 20px 70px;
             border-radius: 32px;
             margin-left: 32px;
             box-shadow: 0px 22.07px 61.43px -19px rgba(57, 101, 255, 0.6);
@@ -90,10 +89,9 @@
     }
     .link{
         width: 604px;
-        height: 45px;
         border-radius: 32px;
-        margin-top: -21px;
-        padding: 15px 70px 16px 70px;
+        margin-top: -25px;
+        padding: 15px 70px 15px 70px;
         background: rgba(0, 117, 255, 1);
         box-shadow: 0px 22.07px 61.43px -19px rgba(57, 101, 255, 0.6);
         font-family: "monument-extended";
@@ -107,7 +105,7 @@
 .bloco-plataforma{
     width: 100%;
     height: auto;
-    background-image: url('../images/Rectangle-259.png');
+    background-image: url('../images/Rectangle-259.webp');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -125,7 +123,7 @@
         border-radius: 32px;
         margin-top: 50px;
         margin-bottom: 50px;
-        padding: 15px 70px 16px 70px;
+        padding: 15px 70px 15px 70px;
         background: rgba(0, 117, 255, 1);
         box-shadow: 0px 22.07px 61.43px -19px rgba(57, 101, 255, 0.6);
         font-family: "monument-extended";
