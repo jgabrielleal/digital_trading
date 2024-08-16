@@ -25,6 +25,7 @@
             &::after {
                 content: "";
                 position: absolute;
+                z-index: -1;
                 background-color: transparent;
                 bottom: 25px;
                 right: -75px;
@@ -53,20 +54,23 @@
         }
         a{
             width: 100%;
+            padding: 15px 70px 15px 70px;
             font-family: "monument-extended";
             font-size: 10px;
             color: rgba(255, 255, 255, 1);
             text-decoration: none;
-            padding: 20px;
             background: rgba(0, 117, 255, 1);
             display: flex;
             justify-content: center;
             border-radius: 32px;
             box-shadow: 0px 22.07px 61.43px -19px rgba(57, 101, 255, 0.6);
-            @include lg{
+            @include lg {
                 width: 332px;
                 font-size: 14px;
-                padding: 20px 70px 20px 70px;
+                transition: transform 0.5s; /* Corrigido para aplicar a transição */
+                &:hover {
+                    transform: scale(1.1); /* Corrigido para aplicar o scale no hover */
+                }
             }
         }
     }
@@ -136,10 +140,15 @@
         text-align: center;
         text-decoration: none;
         color: rgba(255, 255, 255, 1);
+        transition: transform 0.5s; /* Corrigido para aplicar a transição */
         @include lg{
             width: 604px !important;
             margin-top: -25px;
             font-size: 14px;
+            transition: transform 0.5s; /* Corrigido para aplicar a transição */
+            &:hover {
+                transform: scale(1.1); /* Corrigido para aplicar o scale no hover */
+            }
         }
     }
 }
@@ -157,7 +166,7 @@
         display: block;
         margin: 0 auto !important;
         @include lg{
-            width: 500px;
+            width: 700px;
         }
     }
     a{
@@ -177,6 +186,10 @@
             width: 682px;
             height: 45px;
             font-size: 14px;
+            transition: transform 0.5s; /* Corrigido para aplicar a transição */
+            &:hover {
+                transform: scale(1.1); /* Corrigido para aplicar o scale no hover */
+            }
         }
     }
 }

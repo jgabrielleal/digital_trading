@@ -75,6 +75,10 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  transition: transform 0.5s; /* Corrigido para aplicar a transição */
+}
+.header .navbar .navbar-items a:nth-child(2):hover {
+  transform: scale(1.1); /* Corrigido para aplicar o scale no hover */
 }
 .header .boas-vindas {
   margin-top: 100px;
@@ -128,6 +132,10 @@ body {
   .header .boas-vindas a {
     width: 541.9px;
     height: 57.06px;
+    transition: transform 0.5s; /* Corrigido para aplicar a transição */
+  }
+  .header .boas-vindas a:hover {
+    transform: scale(1.1); /* Corrigido para aplicar o scale no hover */
   }
 }
 .header .fim-header {
@@ -198,6 +206,7 @@ body {
   .bloco-vantagens .bloco01::after {
     content: "";
     position: absolute;
+    z-index: -1;
     background-color: transparent;
     bottom: 25px;
     right: -75px;
@@ -227,11 +236,11 @@ body {
 }
 .bloco-vantagens .bloco01 a {
   width: 100%;
+  padding: 15px 70px 15px 70px;
   font-family: "monument-extended";
   font-size: 10px;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  padding: 20px;
   background: rgb(0, 117, 255);
   display: flex;
   justify-content: center;
@@ -242,7 +251,10 @@ body {
   .bloco-vantagens .bloco01 a {
     width: 332px;
     font-size: 14px;
-    padding: 20px 70px 20px 70px;
+    transition: transform 0.5s; /* Corrigido para aplicar a transição */
+  }
+  .bloco-vantagens .bloco01 a:hover {
+    transform: scale(1.1); /* Corrigido para aplicar o scale no hover */
   }
 }
 .bloco-vantagens .bloco02 {
@@ -317,12 +329,17 @@ body {
   text-align: center;
   text-decoration: none;
   color: rgb(255, 255, 255);
+  transition: transform 0.5s; /* Corrigido para aplicar a transição */
 }
 @media (min-width: 992px) {
   .bloco-vantagens .link {
     width: 604px !important;
     margin-top: -25px;
     font-size: 14px;
+    transition: transform 0.5s; /* Corrigido para aplicar a transição */
+  }
+  .bloco-vantagens .link:hover {
+    transform: scale(1.1); /* Corrigido para aplicar o scale no hover */
   }
 }
 
@@ -342,7 +359,7 @@ body {
 }
 @media (min-width: 992px) {
   .bloco-plataforma img {
-    width: 500px;
+    width: 700px;
   }
 }
 .bloco-plataforma a {
@@ -364,6 +381,10 @@ body {
     width: 682px;
     height: 45px;
     font-size: 14px;
+    transition: transform 0.5s; /* Corrigido para aplicar a transição */
+  }
+  .bloco-plataforma a:hover {
+    transform: scale(1.1); /* Corrigido para aplicar o scale no hover */
   }
 }
 
