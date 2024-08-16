@@ -467,6 +467,11 @@ footer .bloco-links .links a {
   white-space: nowrap; /* Impede a quebra de linha */
   overflow: hidden; /* Oculta o texto que ultrapassa o contêiner */
   text-overflow: ellipsis; /* Adiciona reticências ao texto truncado */
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease; /* Adiciona transições suaves */
+}
+footer .bloco-links .links a:hover {
+  transform: scale(1.1); /* Aumenta o tamanho em 10% */
+  color: #32ABF7; /* Muda a cor do texto */
 }
 footer .bloco-contato h1 {
   font-family: inter;
@@ -497,6 +502,8 @@ footer .bloco-contato div a {
 }
 footer .bloco-contato div a:hover {
   color: #32ABF7;
+  transform: scale(1.1) rotate(5deg); /* Adiciona escala e rotação */
+  transition: transform 0.5s ease; /* Suaviza a transição */
 }
 footer .creditos-finais {
   margin-top: 50px;
