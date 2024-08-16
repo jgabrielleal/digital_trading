@@ -489,9 +489,6 @@ footer .bloco-links .links a {
   font-size: 14px;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  white-space: nowrap; /* Impede a quebra de linha */
-  overflow: hidden; /* Oculta o texto que ultrapassa o contêiner */
-  text-overflow: ellipsis; /* Adiciona reticências ao texto truncado */
   transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease; /* Adiciona transições suaves */
 }
 footer .bloco-links .links a:hover {
