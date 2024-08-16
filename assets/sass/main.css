@@ -417,12 +417,16 @@ body {
 }
 .bloco-details details summary {
   display: flex;
+  gap: 11px;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 10px;
   list-style: none !important;
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color: rgb(255, 255, 255);
   list-style: none !important; /* Remove o estilo da lista */
 }
