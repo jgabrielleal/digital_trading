@@ -23,10 +23,15 @@ body {
   margin: 0 auto !important;
 }
 .header .navbar .navbar-brand img {
-  width: 210px;
-  height: 61px;
+  width: 130px;
   image-rendering: -webkit-optimize-contrast; /* Para navegadores baseados em WebKit */
   image-rendering: crisp-edges; /* Para outros navegadores */
+}
+@media (min-width: 992px) {
+  .header .navbar .navbar-brand img {
+    width: 210px;
+    height: 61px;
+  }
 }
 @media (min-width: 992px) {
   .header .navbar .navbar-brand {
@@ -81,14 +86,19 @@ body {
   transform: scale(1.1); /* Corrigido para aplicar o scale no hover */
 }
 .header .boas-vindas {
-  margin-top: 100px;
+  margin-top: 50px;
+}
+@media (min-width: 992px) {
+  .header .boas-vindas {
+    margin-top: 100px;
+  }
 }
 .header .boas-vindas h1 {
   width: 100%;
   font-family: "monument-extended";
   font-size: 30px;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px !important;
   background: linear-gradient(92.21deg, #FFFFFF 41.1%, rgba(255, 255, 255, 0) 106.43%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -97,6 +107,7 @@ body {
   .header .boas-vindas h1 {
     width: 1042.28px;
     font-size: 44.99px;
+    line-height: 50px !important;
   }
 }
 .header .boas-vindas p {
@@ -413,6 +424,14 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
   color: rgb(255, 255, 255);
+  list-style: none !important; /* Remove o estilo da lista */
+}
+@media not all and (-webkit-min-device-pixel-ratio: 0), not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .bloco-details details summary::-webkit-details-marker {
+      display: none; /* Oculta o ícone do summary no Safari */
+    }
+  }
 }
 .bloco-details details summary img {
   width: 50px;

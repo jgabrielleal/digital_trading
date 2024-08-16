@@ -218,6 +218,14 @@
           font-family: "Inter", sans-serif;
           font-size: 18px;
           color: rgba(255, 255, 255, 1);
+          list-style: none !important; /* Remove o estilo da lista */
+          @media not all and (min-resolution: 0.001dpcm) {
+              @supports (-webkit-appearance: none) {
+                  &::-webkit-details-marker {
+                      display: none; /* Oculta o ícone do summary no Safari */
+                  }
+              }
+          }
           img {
             width: 50px;
           }
