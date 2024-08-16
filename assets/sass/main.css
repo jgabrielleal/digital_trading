@@ -426,6 +426,12 @@ body {
   color: rgb(255, 255, 255);
   list-style: none !important; /* Remove o estilo da lista */
 }
+.bloco-details details summary::marker {
+  color: rgb(7, 22, 36);
+}
+.bloco-details details summary::-webkit-details-marker {
+  color: rgb(7, 22, 36);
+}
 @media not all and (-webkit-min-device-pixel-ratio: 0), not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
     .bloco-details details summary::-webkit-details-marker {
