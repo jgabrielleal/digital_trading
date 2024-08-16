@@ -1,74 +1,111 @@
 .bloco-vantagens{
-    width: 1000px;
+    width: 100% !important;
     position: relative;
-    display: none !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto !important;
     @include lg{
-        display: block !important;
-        margin-top: 100px;
+        width: 1000px !important;
     }
     .bloco01{
-        width: 400px;
+        width: 100% !important;
         height: 280px;
         position: relative;
         background-color: rgba(7, 22, 36, 1);
-        border-top-left-radius: 31.9px;
-        border-top-right-radius: 31.9px;
-        &::after {
-            content: "";
-            position: absolute;
-            background-color: transparent;
-            bottom: 0px;
-            right: -100px;
-            height: 100px;
-            width: 100px;
-            border-top-right-radius: 25px;
-            box-shadow: 0 -25px 0 0 rgba(7, 22, 36, 1);
-            transform: scaleX(-1) rotate(90deg); /* Gira o elemento 90 graus e inverte horizontalmente */
-
+        border-radius: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        @include lg{
+            width: 400px !important;
+            border-radius: 0;
+            border-top-left-radius: 31.9px;
+            border-top-right-radius: 31.9px;
+        }
+        @include lg{
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: transparent;
+                bottom: 25px;
+                right: -75px;
+                height: 50px;
+                width: 100px;
+                border-top-right-radius: 25px;
+                box-shadow: 0 -25px 0 0 rgba(7, 22, 36, 1);
+                transform: scaleX(-1) rotate(90deg); /* Gira o elemento 90 graus e inverte horizontalmente */
+    
+            }
         }
         h1{
-            width: 377px;
-            height: 117px;
+            width: 100% !important;
             font-family: "monument-extended";
-            font-size: 30px;
+            font-size: 25px;
             color: rgba(255, 255, 255, 1);
-            display: block;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
             padding-top: 50px !important;
-            margin-bottom: 90px;
-            margin-left: 37px;
+            @include lg{
+                width: 300px !important;
+                height: 117px !important;
+                margin-bottom: 50px;
+            }
         }
         a{
-            width: 332px;
+            width: 100%;
             font-family: "monument-extended";
-            font-size: 16px;
+            font-size: 10px;
             color: rgba(255, 255, 255, 1);
             text-decoration: none;
+            padding: 20px;
             background: rgba(0, 117, 255, 1);
-            padding: 20px 70px 20px 70px;
+            display: flex;
+            justify-content: center;
             border-radius: 32px;
-            margin-left: 32px;
             box-shadow: 0px 22.07px 61.43px -19px rgba(57, 101, 255, 0.6);
+            @include lg{
+                width: 332px;
+                font-size: 14px;
+                padding: 20px 70px 20px 70px;
+            }
         }
     }
     .bloco02{
-        width: 495px;
-        height: 259px;
-        margin-left: 453px;
-        margin-top: -280px;
+        width: 100%;
+        margin-top: 20px;
+        @include lg{
+            width: 495px !important;
+            height: 259px;
+            margin-left: 453px;
+            margin-top: -280px;
+        }
     }
     .bloco03{
-        width: 950px;
-        height: 500px;
-        margin-top: 21px;
+        width: 100% !important;
+        height: auto;
         background-color: rgba(7, 22, 36, 1);
-        border-top-right-radius: 31.9px;
-        border-bottom-left-radius: 31.9px;
-        border-bottom-right-radius: 31.9px;
+        border-radius: 20px;
+        margin-top: 21px;
         display: flex;
-        gap: 100px;
+        flex-wrap: wrap !important;
+        gap: 15px;
         padding: 40px;
+        @include lg{
+            width: 950px !important;
+            height: 500px;
+            margin-top: 0;
+            flex-wrap: nowrap !important;
+            gap: 100px;
+            border-radius: 0;
+            border-top-right-radius: 31.9px;
+            border-bottom-left-radius: 31.9px;
+            border-bottom-right-radius: 31.9px;
+        }
         .card{
-            width: 248px;
+            width: 100%;
+            @include lg{
+                width: 248px;
+            }
             img{
                 width: 127.59px;
                 height: 44.87px;
@@ -88,17 +125,22 @@
         }
     }
     .link{
-        width: 604px;
+        width: 100%;
         border-radius: 32px;
-        margin-top: -25px;
+        margin-top: 15px;
         padding: 15px 70px 15px 70px;
         background: rgba(0, 117, 255, 1);
         box-shadow: 0px 22.07px 61.43px -19px rgba(57, 101, 255, 0.6);
         font-family: "monument-extended";
-        font-size: 14px;
+        font-size: 10px;
         text-align: center;
         text-decoration: none;
         color: rgba(255, 255, 255, 1);
+        @include lg{
+            width: 604px !important;
+            margin-top: -25px;
+            font-size: 14px;
+        }
     }
 }
 
@@ -127,13 +169,14 @@
         background: rgba(0, 117, 255, 1);
         box-shadow: 0px 22.07px 61.43px -19px rgba(57, 101, 255, 0.6);
         font-family: "monument-extended";
-        font-size: 14px;
+        font-size: 10px;
         text-align: center;
         text-decoration: none;
         color: rgba(255, 255, 255, 1);
         @include lg{
             width: 682px;
             height: 45px;
+            font-size: 14px;
         }
     }
 }
@@ -152,13 +195,13 @@
         border-radius: 120px;
         background-color: rgba(7, 22, 36, 1) !important;
         margin-bottom: 20px;
-        transition: border-radius 0.5s ease, background-color 0.5s ease;
+        transition: border-radius 0.1s ease, background-color 0.1s ease;
         summary {
           display: flex;
           justify-content: space-between;
           align-items: center;
           padding: 15px;
-          list-style: none;
+          list-style: none !important;
           font-family: "Inter", sans-serif;
           font-size: 18px;
           color: rgba(255, 255, 255, 1);

@@ -61,9 +61,9 @@
     .boas-vindas{
         margin-top: 100px;
         h1{
-            width: auto;
+            width: 100%;
             font-family: "monument-extended";
-            font-size: 44.99px;
+            font-size: 30px;
             text-align: center;
             line-height: 50px;
             background: linear-gradient(92.21deg, #FFFFFF 41.1%, rgba(255, 255, 255, 0) 106.43%);
@@ -71,8 +71,7 @@
             -webkit-text-fill-color: transparent;
             @include lg{
                 width: 1042.28px;
-                height: 108px;
-                font-size: 42px;
+                font-size: 44.99px;
             }
         }
         p{
